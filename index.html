@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no" class="has-navbar-fixed-top">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Makerspace</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+    </head>
+
+    <body onload="checkCookie()">
+        <div class="container">
+                        
+            <!-- Navbar -->
+            <div class="block">
+                <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="#">
+                            <img src="media/TGGLogo.png" width="35" height="35">
+                        </a>
+                        <a href="" class="navbar-item">
+                            <img src="#" alt="">
+                            <h1 class="title is-4">Makerspace</h1>
+                        </a>
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-navbarDiv">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="main-navbarDiv" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a href="" class="navbar-item">Hjem</a>
+                            <a href="subsites/get.html" class="navbar-item">#</a>
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                
+                                <a href="" class="navbar-link">#</a>
+                                <div class="navbar-dropdown">
+                                    <hr class="navbar-divider">
+                                    <div class="navbar-item has-text-grey-light">#</div>
+                                    <a href="" class="navbar-item">#</a>
+                                    <a href="" class="navbar-item">#</a>
+                                    <a href="" class="navbar-item">#</a>
+                                    <hr class="navbar-divider">
+                                    <div class="navbar-item has-text-grey-light">#</div>
+                                    <a href="" class="navbar-item">#</a>
+                                    <a href="" class="navbar-item">#</a>
+
+                                </div>
+                            </div>
+
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a href="#" class="navbar-link">#</a>
+
+                                <div class="navbar-dropdown">
+                                    <a href="" class="navbar-item">#</a>
+                                </div>
+                            </div>
+                            <a href="subsites/about.html" class="navbar-item">#</a>
+                            <a href="subsites/contact.html" class="navbar-item">#</a>
+
+                        </div>
+                        <div class="navbar-end">
+                            <a href="https://store.steampowered.com/app/105600/Terraria/" class="navbar-item" target="_blank">
+                                <span class="icon">
+                                    <i class="fa-brands fa-steam"></i>
+                                    <a href="">
+
+                                </span>
+                            </a>
+    
+                            <a href="https://old.reddit.com/r/Terraria/" class="navbar-item" target="_blank">
+                                <span class="icon">
+                                    <i class="fa-brands fa-reddit"></i>
+                                </span>
+                            </a>
+                        </div>
+                        
+                        <!-- BORGAR functionality -->
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+
+                            // Get all "navbar-borgar" elements
+                            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+                            // Add a click event on each of them
+                            $navbarBurgers.forEach( el => {
+                                el.addEventListener('click', () => {
+
+                                // Get the target from the "data-target" attribute
+                                const target = el.dataset.target;
+                                const $target = document.getElementById(target);
+
+                                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                                el.classList.toggle('is-active');
+                                $target.classList.toggle('is-active');
+
+                                });
+                            });
+
+                            });
+                        </script>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Front page -->
+
+            <div class="container">
+                <div class="content">
+                    
+                </div>
+            </div>
+
+            <div class="box">
+                <h1 class="title is-1">Makerspace</h1>
+                <p>
+                    Her på Rud så har vi et område som heter Makerspace. Makerspace er en arbeidsplass hvor samhandlig og samarbeid finner sted. Det kan definers som et anlegg hvor læring, utforskning og deling foregår med eller uten høy teknologiske verktøy. Du har tilgjengelig verktøy som 3D printere, laser kuttere, CNC fresere og mye mer. Her løser du problemer og øver på kritisk tenking. Det kunne produsere noe selv øker definetivt din egen selvtilitt, og alle elever uansett linje er velkommen. Her er det bare kreativiteten som setter grenser.
+                </p>
+            </div>
+
+           
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
